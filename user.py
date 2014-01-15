@@ -1,5 +1,6 @@
 import sqlite3
 import datetime
+from passlib.hash import pbkdf2_sha512
 
 
 path = "/Users/workhorse/thinkful/"
@@ -44,12 +45,12 @@ def userSignIn():
 
 def userSignUp():
     userName = raw_input("Enter a user name: ")
-    password = raw_input("Enter a password: ")
-    confirmPassword = raw_input("Confirm Your Password: ")
+    password = pbkdf2_sha512.encrypt(raw_input("Enter a password: "))
+    confirmPassword = pbkdf2_sha512.encrypt(raw_input("Confirm Your Password: "))
     if password != confirmPassword:
         print "passwords do not match"
-        password = raw_input("Enter a password: ")
-        confirmPassword = raw_input("Confirm Your Password: ")
+        password = pbkdf2_sha512.encrypt(raw_input("Enter a password: "))
+        confirmPassword = pbkdf2_sha512.encrypt(raw_input("Confirm Your Password: "))
     firstName = raw_input("Enter your first name: ")
     lastName = raw_input("Enter your last name: ")
     companyName = raw_input("Enter your company name: ")
