@@ -60,12 +60,18 @@ def userSignUp():
     regDate = datetime.date.today()
     print regDate
 
-    userInfo = (userName, password, confirmPassword, firstName,lastName, companyName, email, phoneNumber,addressLine1,
-    addressLine2, addressLine3, zipCode, province, country, regDate)
+    #userInfo = (userName, password, confirmPassword, firstName,lastName, companyName, email, phoneNumber,addressLine1,
+    #addressLine2, addressLine3, zipCode, province, country, regDate)
+
+    params = (userName, password, confirmPassword, firstName, lastName,
+          companyName, email, phoneNumber, addressLine1, addressLine2,
+          addressLine3, zipCode, province, country, regDate)
+
+
 
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
-        c.execute("INSERT INTO People VALUES(?, ?, ?, ?, ?,?, ?, ?, ?,?,?, ?, ?, ?, ?)",userInfo)
+        c.execute("INSERT INTO People VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
 
 checkAndCreateDB()
 
