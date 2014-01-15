@@ -46,6 +46,10 @@ def userSignUp():
     userName = raw_input("Enter a user name: ")
     password = raw_input("Enter a password: ")
     confirmPassword = raw_input("Confirm Your Password: ")
+    if password != confirmPassword:
+        print "passwords do not match"
+        password = raw_input("Enter a password: ")
+        confirmPassword = raw_input("Confirm Your Password: ")
     firstName = raw_input("Enter your first name: ")
     lastName = raw_input("Enter your last name: ")
     companyName = raw_input("Enter your company name: ")
@@ -60,8 +64,6 @@ def userSignUp():
     regDate = datetime.date.today()
     print regDate
 
-    #userInfo = (userName, password, confirmPassword, firstName,lastName, companyName, email, phoneNumber,addressLine1,
-    #addressLine2, addressLine3, zipCode, province, country, regDate)
 
     params = (userName, password, confirmPassword, firstName, lastName,
           companyName, email, phoneNumber, addressLine1, addressLine2,
