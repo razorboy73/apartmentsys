@@ -2,6 +2,7 @@ import sqlite3
 import datetime
 import random
 import hashlib
+from login import userSignIn
 import hmac
 
 
@@ -79,7 +80,7 @@ def valid_pw(pw, salt, password):
     else:
         return False
 
-
+"""
 def userSignIn():
 
     userName = raw_input("Enter your user name: ")
@@ -98,6 +99,7 @@ def userSignIn():
                 print "Authentic"
             else:
                 print "reject"
+"""
 
 def userSignUp():
 
