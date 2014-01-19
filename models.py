@@ -61,3 +61,13 @@ Tenant Registration
   - Notices - preformatted forms
   - Automated Late Rent Notice - automatically on day 2 of month and on demand - emailed automatically to manager in pdf
   - Rent Increases - emailed automatically to manager
+
+
+
+What do you want to do now
+1. Register a new building
+2. add a tenant
+3. Modify a tenant
+4. collect rent
+5. Modify global settings
+6. Manually generate reports

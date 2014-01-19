@@ -102,7 +102,7 @@ def userSignIn():
 """
 
 def userSignUp():
-
+    print "You are signing up as a new user"
     userName = raw_input("Enter a user name: ")
     password, salt = hash_str(raw_input("Enter a password: "))
     print password

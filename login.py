@@ -20,6 +20,15 @@ def userSignIn():
             x = hashlib.sha256(password+row[3]).hexdigest()
             print x
             if x  == row[2]:
-                print "Authentic"
+                choice = raw_input( """Authenticated
+                What do you want to do now
+                Enter the number of your choice:
+                1. Register a new building
+                2. add a tenant
+                3. Modify a tenant
+                4. collect rent
+                5. Modify global settings
+                6. Manually generate reports
+                """)
             else:
                 print "reject"
