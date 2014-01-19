@@ -1,1 +1,6 @@
 This is a prototype for a system to help small building owners manage and administer their buildings
+
+First Generation system is a simply python build against an sqlite db - not secure and not for production use
+
+if you even attempt to use this authentication system in a production environment, you might be an idiot.
+
