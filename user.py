@@ -1,10 +1,13 @@
 import sqlite3
 import datetime
-from passlib.hash import pbkdf2_sha512
+import random
+import hashlib
+import hmac
 
 
 path = "/Users/workhorse/thinkful/"
 db = "apartment.db"
+SECRET = "imsosecret"
 
 def checkAndCreateDB():
     #not checking for some reason
@@ -16,6 +19,9 @@ def checkAndCreateDB():
     print "Creating database"
     createUserRegTable()
 
+
+
+
 def createUserRegTable():
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
@@ -23,6 +29,7 @@ def createUserRegTable():
             (p_ID INTEGER PRIMARY KEY AUTOINCREMENT,
             userName TEXT NOT NULL UNIQUE,
             password TEXT NOT NULL,
+            salt Text NOT NULL,
             confirmPassword TEXT NOT NULL,
             firstName TEXT NOT NULL,
             lastName TEXT NOT NULL,
@@ -40,17 +47,66 @@ def createUserRegTable():
         print "table made"
 
 
+def make_salt():
+	salt_char =[]
+	for x in range(15):
+		z =random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+		salt_char.append(z)
+	#print salt
+	salt = ''.join(salt_char)
+	return salt
+
+current_salt =[]
+
+def hash_str(pw):
+	salt = make_salt()
+	#print salt
+	#salted.append(salt)
+	#print name
+	#print SECRET
+	#return hashlib.md5(s).hexdigest()
+	current_salt.append(salt)
+	h = hashlib.sha256(pw+salt).hexdigest()
+	return h, salt
+
+def valid_pw(pw, salt, password):
+    x = hashlib.sha256(pw+salt).hexdigest()
+    y = password
+    print "confirmed pw", x
+    print "original pw", y
+    if x == y:
+        return True
+    else:
+        return False
+
+
 def userSignIn():
-    pass
+
+    userName = raw_input("Enter your user name: ")
+    password = raw_input("Enter a password: ")
+    with sqlite3.connect(db) as connection:
+        c = connection.cursor()
+        c.execute ("SELECT firstName, lastName, password, salt from People WHERE userName='{}'".format(userName))
+        for row in c.fetchall():
+            print row[0]
+            print row[1]
+            print row[2]
+            print row[3]
+            x = hashlib.sha256(password+row[3]).hexdigest()
+            print x
+            if x  == row[2]:
+                print "Authentic"
+            else:
+                print "reject"
 
 def userSignUp():
+
     userName = raw_input("Enter a user name: ")
-    password = pbkdf2_sha512.encrypt(raw_input("Enter a password: "))
-    confirmPassword = pbkdf2_sha512.encrypt(raw_input("Confirm Your Password: "))
-    if password != confirmPassword:
-        print "passwords do not match"
-        password = pbkdf2_sha512.encrypt(raw_input("Enter a password: "))
-        confirmPassword = pbkdf2_sha512.encrypt(raw_input("Confirm Your Password: "))
+    password, salt = hash_str(raw_input("Enter a password: "))
+    print password
+    print "salt: ", salt
+    confirmPassword = valid_pw(raw_input("Confirm Your Password: "), salt, password)
+    print confirmPassword
     firstName = raw_input("Enter your first name: ")
     lastName = raw_input("Enter your last name: ")
     companyName = raw_input("Enter your company name: ")
@@ -66,7 +122,7 @@ def userSignUp():
     print regDate
 
 
-    params = (userName, password, confirmPassword, firstName, lastName,
+    params = ( userName, password, salt, confirmPassword, firstName, lastName,
           companyName, email, phoneNumber, addressLine1, addressLine2,
           addressLine3, zipCode, province, country, regDate)
 
@@ -74,11 +130,14 @@ def userSignUp():
 
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
-        c.execute("INSERT INTO People VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
+        c.execute("INSERT INTO People VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
 
-checkAndCreateDB()
+
+#checkAndCreateDB()
 
 userSignUp()
+userSignIn()
+
 
 
 
