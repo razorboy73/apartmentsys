@@ -41,28 +41,28 @@ def userSignIn():
                 print "reject"
 
 def registerBuilding(owner):
-    buildingName =raw_input("Legal Name of Corporation holding building - to be used on forms: ")
-    streetNumber
-    streetName
-    StreetType
-    Direction
-    Municpality
-    Province
-    PostalCode
-    ManagerFirstName
-    ManagerLastName
-    addressSt=raw_input("Street ad: ")
-    addressSt1=raw_input("Name of Building: ")
-    addressSt=raw_input("Name of Building: ")
-
+    print "The following information will be used to complete legal forms and notices"
     owner = owner
     numOfUnits = int(raw_input("Number of units: "))
+    buildingName =raw_input("Legal Name of Corporation holding building - to be used on forms: ")
+    streetNumber =raw_input("Street Number for the Building: ")
+    streetName  =raw_input("Street Name - do not include Type (St/Ave/Dr) or direction")
+    streetType =raw_input("Street Type (e.g. Street, Avenue, Road): ")
+    direction =raw_input("Direction of Street: ")
+    municipality =raw_input("City/Municpality: ")
+    province =raw_input("Province/State - 2 Letter Abbreviations: ")
+    postalCode =raw_input("Zip or Postal Code: ")
+    managerFirstName =raw_input("Building Manager First Name- This individual's  names will appear on forms: ")
+    managerLastName =raw_input("Building Manager Last Name- This individual's names will appear on forms: ")
 
-    params = ( buildingName, owner, numOfUnits)
+
+
+    params = (owner, numOfUnits, buildingName, streetNumber, streetName, streetType, direction, municipality, province, postalCode,
+               managerFirstName, managerLastName)
 
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
-        c.execute("INSERT INTO building VALUES (NULL, ?, ?,?)", params)
+        c.execute("INSERT INTO building VALUES (NULL, ?,?,?,?,?,?,?,?,?,?,?,?)", params)
 
     #add a tenant to this building
 
@@ -83,11 +83,9 @@ def registerTenant(owner):
     owner = owner
     unitNum = raw_input("Enter the unit number: ")
     #check for duplications
-    rent = raw_input("Enter a building number: ")
+    rent = raw_input("Enter Monthly Rent - do not include dollar sign: ")
     fname = raw_input("tenant first name: ")
     lname = raw_input("tenant last name: ")
-
-
 
     params = ( buildingName, owner, unitNum, rent, fname, lname)
 

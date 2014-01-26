@@ -29,8 +29,6 @@ def checkAndCreateDB():
         print "exists"
 
 
-
-
 def createUserRegTable():
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
@@ -45,9 +43,11 @@ def createUserRegTable():
             companyName TEXT NOT NULL,
             email TEXT NOT NULL UNIQUE,
             phoneNumber TEXT NOT NULL,
+            faxNumber TEXT NOT NULL,
             addressLine1 TEXT NOT NULL,
             addressLine2 TEXT,
             addressLine3 TEXT,
+            suitNumber TEXT,
             zipCode TEXT NOT NULL,
             province TEXT NOT NULL,
             country TEXT NOT NULL,
@@ -60,9 +60,18 @@ def createBuildingRegTable():
         c = connection.cursor()
         c.execute("""CREATE TABLE building
             (b_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-            buildingName TEXT NOT NULL UNIQUE,
             owner INTEGER NOT NULL,
             numOfUnits INTEGER NOT NULL,
+            buildingName TEXT NOT NULL UNIQUE,
+            streetNumber TEXT NOT NULL,
+            streetName  TEXT NOT NULL,
+            streetType TEXT NOT NULL,
+            direction TEXT NOT NULL,
+            municipality TEXT NOT NULL,
+            province TEXT NOT NULL,
+            postalCode TEXT NOT NULL,
+            managerFirstName TEXT NOT NULL,
+            managerLastName TEXT NOT NULL,
             FOREIGN KEY(owner) REFERENCES people(p_ID))
             """)
         print "building table made"
@@ -145,15 +154,13 @@ def userSignUp():
     print regDate
 
 
-    params = ( userName, password, salt, confirmPassword, firstName, lastName,
-          companyName, email, phoneNumber, addressLine1, addressLine2,
-          addressLine3, zipCode, province, country, regDate)
+    params = ( userName,password, salt, confirmPassword,firstName, lastName, companyName, email, phoneNumber, faxNumber, addressLine1, addressLine2, addressLine3, suiteNumber, zipCode, province, country, regDate)
 
 
 
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
-        c.execute("INSERT INTO People VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
+        c.execute("INSERT INTO People VALUES (NULL, ?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
 
 
 #checkAndCreateDB()
