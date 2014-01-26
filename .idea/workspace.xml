@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="876a0dbe-59b7-45c0-bc9c-27f0d9806fea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.py" afterPath="$PROJECT_DIR$/login.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user.py" afterPath="$PROJECT_DIR$/user.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,35 +33,38 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="37" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1035">
+            <state line="66" column="0" selection-start="1366" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1185">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="103" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
+            <state line="120" column="0" selection-start="3264" selection-end="3264" vertical-scroll-proportion="0.11921708" vertical-offset="1733" max-vertical-offset="2580">
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1390169690000" expanded="true" signature="575:1252" placeholder="CREATE TABLE..People..." />
-                <marker date="1390169690000" expanded="true" signature="575:608" placeholder="CREATE TABLE..People..." />
-                <marker date="1390169690000" expanded="true" signature="575:1235" placeholder="CREATE TABLE..People..." />
-                <marker date="1390169690000" expanded="true" signature="2160:2230" placeholder="SELECT first..People..." />
-                <marker date="1390169690000" expanded="true" signature="2160:2230" placeholder="SELECT first..People..." />
-                <marker date="1390169690000" expanded="true" signature="3870:3950" placeholder="INSERT INTO ..." />
+                <marker date="1390770919000" expanded="true" signature="844:1521" placeholder="CREATE TABLE..People..." />
+                <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+                <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+                <marker date="1390770919000" expanded="true" signature="844:877" placeholder="CREATE TABLE..People..." />
+                <marker date="1390770919000" expanded="true" signature="1682:1936" placeholder="CREATE TABLE..building..." />
+                <marker date="1390770919000" expanded="true" signature="2122:2549" placeholder="CREATE TABLE..units..." />
+                <marker date="1390770919000" expanded="true" signature="4704:4784" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="30" selection-start="741" selection-end="741" vertical-scroll-proportion="0.62608695" vertical-offset="0" max-vertical-offset="575">
+            <state line="52" column="19" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="1545">
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
+                <marker date="1390770696000" expanded="true" signature="1969:2011" placeholder="INSERT INTO ..." />
+                <marker date="1390770696000" expanded="true" signature="2967:3012" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +73,7 @@
       <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="6" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
@@ -94,17 +97,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/user.py" />
+        <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/login.py" />
+        <option value="$PROJECT_DIR$/user.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="322" />
-    <option name="y" value="46" />
-    <option name="width" value="1258" />
+    <option name="x" value="-133" />
+    <option name="y" value="90" />
+    <option name="width" value="863" />
     <option name="height" value="698" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -133,7 +136,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,17 +156,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -282,6 +285,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,9 +309,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -393,7 +396,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="322" y="46" width="1258" height="698" extended-state="0" />
+    <frame x="-133" y="90" width="863" height="698" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -401,7 +404,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14069952" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2050985" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966834" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -432,6 +435,95 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="1366" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="0" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0" vertical-offset="2355" max-vertical-offset="2445">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1390770919000" expanded="true" signature="844:1521" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:877" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="1682:1936" placeholder="CREATE TABLE..building..." />
+            <marker date="1390770919000" expanded="true" signature="2122:2549" placeholder="CREATE TABLE..units..." />
+            <marker date="1390770919000" expanded="true" signature="4704:4784" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="3" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="900">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1390770696000" expanded="true" signature="1969:2011" placeholder="INSERT INTO ..." />
+            <marker date="1390770696000" expanded="true" signature="2967:3012" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="1366" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="43" selection-start="2645" selection-end="2645" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2265">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1390770919000" expanded="true" signature="844:1521" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:877" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="1682:1936" placeholder="CREATE TABLE..building..." />
+            <marker date="1390770919000" expanded="true" signature="2122:2549" placeholder="CREATE TABLE..units..." />
+            <marker date="1390770919000" expanded="true" signature="4704:4784" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="41" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="585">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1390770696000" expanded="true" signature="1969:2011" placeholder="INSERT INTO ..." />
+            <marker date="1390770696000" expanded="true" signature="2967:3012" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="37" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1035">
@@ -444,12 +536,13 @@
         <state line="89" column="11" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1920">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390169690000" expanded="true" signature="575:1252" placeholder="CREATE TABLE..People..." />
-            <marker date="1390169690000" expanded="true" signature="575:608" placeholder="CREATE TABLE..People..." />
-            <marker date="1390169690000" expanded="true" signature="575:1235" placeholder="CREATE TABLE..People..." />
-            <marker date="1390169690000" expanded="true" signature="2160:2230" placeholder="SELECT first..People..." />
-            <marker date="1390169690000" expanded="true" signature="2160:2230" placeholder="SELECT first..People..." />
-            <marker date="1390169690000" expanded="true" signature="3870:3950" placeholder="INSERT INTO ..." />
+            <marker date="1390770919000" expanded="true" signature="844:1521" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:877" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="1682:1936" placeholder="CREATE TABLE..building..." />
+            <marker date="1390770919000" expanded="true" signature="2122:2549" placeholder="CREATE TABLE..units..." />
+            <marker date="1390770919000" expanded="true" signature="4704:4784" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -463,7 +556,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="37" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+        <state line="66" column="0" selection-start="1366" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1185">
           <folding />
         </state>
       </provider>
@@ -475,26 +568,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user.py">
+    <entry file="file://$PROJECT_DIR$/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="103" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
+        <state line="52" column="19" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0" vertical-offset="983" max-vertical-offset="1545">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390169690000" expanded="true" signature="575:1252" placeholder="CREATE TABLE..People..." />
-            <marker date="1390169690000" expanded="true" signature="575:608" placeholder="CREATE TABLE..People..." />
-            <marker date="1390169690000" expanded="true" signature="575:1235" placeholder="CREATE TABLE..People..." />
-            <marker date="1390169690000" expanded="true" signature="2160:2230" placeholder="SELECT first..People..." />
-            <marker date="1390169690000" expanded="true" signature="2160:2230" placeholder="SELECT first..People..." />
-            <marker date="1390169690000" expanded="true" signature="3870:3950" placeholder="INSERT INTO ..." />
+            <marker date="1390770696000" expanded="true" signature="1969:2011" placeholder="INSERT INTO ..." />
+            <marker date="1390770696000" expanded="true" signature="2967:3012" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.py">
+    <entry file="file://$PROJECT_DIR$/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="741" selection-end="741" vertical-scroll-proportion="0.62608695" vertical-offset="0" max-vertical-offset="575">
+        <state line="120" column="0" selection-start="3264" selection-end="3264" vertical-scroll-proportion="0.11921708" vertical-offset="1733" max-vertical-offset="2580">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1390770919000" expanded="true" signature="844:1521" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:1504" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="844:877" placeholder="CREATE TABLE..People..." />
+            <marker date="1390770919000" expanded="true" signature="1682:1936" placeholder="CREATE TABLE..building..." />
+            <marker date="1390770919000" expanded="true" signature="2122:2549" placeholder="CREATE TABLE..units..." />
+            <marker date="1390770919000" expanded="true" signature="4704:4784" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

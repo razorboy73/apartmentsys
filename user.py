@@ -3,22 +3,30 @@ import datetime
 import random
 import hashlib
 from login import userSignIn
+import os
 import hmac
 
 
-path = "/Users/workhorse/thinkful/"
+path = "/Users/workhorse/thinkful/apartments"
 db = "apartment.db"
 SECRET = "imsosecret"
 
 def checkAndCreateDB():
+    if not os.path.exists(os.path.join(path, db)):
     #not checking for some reason
     #fullPath = os.path.join(path, db)
     #if os.path.exists(fullPath):
     #   print "Database Exists"
     #else:
-    connection = sqlite3.connect(db)
-    print "Creating database"
-    createUserRegTable()
+        connection = sqlite3.connect(db)
+        createUserRegTable()
+        print "Creating Admin User Table"
+        createBuildingRegTable()
+        print "Created Building Table"
+        registerTenantPerBuilding()
+        print "Created Tenant Table"
+    else:
+        print "exists"
 
 
 
@@ -45,7 +53,37 @@ def createUserRegTable():
             country TEXT NOT NULL,
             regDate DATE NOT NULL)
             """)
-        print "table made"
+        print "user table made"
+
+def createBuildingRegTable():
+    with sqlite3.connect(db) as connection:
+        c = connection.cursor()
+        c.execute("""CREATE TABLE building
+            (b_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            buildingName TEXT NOT NULL UNIQUE,
+            owner INTEGER NOT NULL,
+            numOfUnits INTEGER NOT NULL,
+            FOREIGN KEY(owner) REFERENCES people(p_ID))
+            """)
+        print "building table made"
+
+
+def registerTenantPerBuilding():
+    with sqlite3.connect(db) as connection:
+        c = connection.cursor()
+        c.execute("""CREATE TABLE units
+            (u_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            buildingName TEXT NOT NULL UNIQUE,
+            owner INTEGER NOT NULL,
+            unitNum INTEGER NOT NULL,
+            rent INTEGER NOT NULL,
+            fname TEXT NOT NULL,
+            lname TEXT NOT NULL,
+            FOREIGN KEY(owner) REFERENCES people(p_ID),
+            FOREIGN KEY(buildingName) REFERENCES building(b_ID)
+            )
+            """)
+        print "Tenant table made"
 
 
 def make_salt():
@@ -80,26 +118,7 @@ def valid_pw(pw, salt, password):
     else:
         return False
 
-"""
-def userSignIn():
 
-    userName = raw_input("Enter your user name: ")
-    password = raw_input("Enter a password: ")
-    with sqlite3.connect(db) as connection:
-        c = connection.cursor()
-        c.execute ("SELECT firstName, lastName, password, salt from People WHERE userName='{}'".format(userName))
-        for row in c.fetchall():
-            print row[0]
-            print row[1]
-            print row[2]
-            print row[3]
-            x = hashlib.sha256(password+row[3]).hexdigest()
-            print x
-            if x  == row[2]:
-                print "Authentic"
-            else:
-                print "reject"
-"""
 
 def userSignUp():
     print "You are signing up as a new user"
@@ -114,9 +133,11 @@ def userSignUp():
     companyName = raw_input("Enter your company name: ")
     email = raw_input("Enter your email: ")
     phoneNumber = raw_input("Enter your phone number: ")
+    faxNumber = raw_input("Enter your fax number: ")
     addressLine1 = raw_input("Enter your address: ")
     addressLine2 = raw_input("Enter second line of your address (Not Required): ")
     addressLine3 = raw_input("Enter third line of your address (Not Required): ")
+    suiteNumber = raw_input("Enter your suite code: ")
     zipCode = raw_input("Enter your zip code: ")
     province = raw_input("Enter your state or province: ")
     country = raw_input("Enter your country: ")
@@ -137,7 +158,7 @@ def userSignUp():
 
 #checkAndCreateDB()
 
-userSignUp()
+#userSignUp()
 userSignIn()
 
 
