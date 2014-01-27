@@ -1,5 +1,6 @@
 import hashlib
 import sqlite3
+from reporting import reportModule
 
 path = "/Users/workhorse/thinkful/"
 db = "apartment.db"
@@ -30,12 +31,15 @@ def userSignIn():
                 5. Modify global settings
                 6. Manually generate reports
                 """)
-                if choice=="one":
+                if choice=="1":
                     print "new building"
                     registerBuilding(row[0])
-                if choice=="two":
+                if choice=="2":
                     print "new tenant"
                     registerTenant(row[0])
+                if choice=="6":
+                    print "Transfering to Reporting module"
+                    reportModule(row[0])
 
             else:
                 print "reject"
