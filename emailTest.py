@@ -20,6 +20,6 @@ msg['To'] = "joshadamkerbel@gmail.com"
 # Send the message via our own SMTP server, but don't include the
 # envelope header.
 #s = smtplib.SMTP('localhost')
-s = smtplib.SMTP( "mail.rallyyourgoals.com",25 )
+s = smtplib.SMTP( "mail.*****",**** )
 s.sendmail(me, [you], msg.as_string())
 s.quit()
