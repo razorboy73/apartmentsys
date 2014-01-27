@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="876a0dbe-59b7-45c0-bc9c-27f0d9806fea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildings.txt" afterPath="$PROJECT_DIR$/buildings.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.py" afterPath="$PROJECT_DIR$/login.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reporting.py" afterPath="$PROJECT_DIR$/reporting.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user.py" afterPath="$PROJECT_DIR$/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="apartments.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,16 +45,16 @@
       <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="0" selection-start="5265" selection-end="5265" vertical-scroll-proportion="0.0" vertical-offset="2093" max-vertical-offset="2760">
+            <state line="178" column="0" selection-start="5514" selection-end="5514" vertical-scroll-proportion="0.0" vertical-offset="2183" max-vertical-offset="2760">
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1390844379000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
-                <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-                <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-                <marker date="1390844379000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
-                <marker date="1390844379000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
-                <marker date="1390844379000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
-                <marker date="1390844379000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
+                <marker date="1390851548000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
+                <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+                <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+                <marker date="1390851548000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
+                <marker date="1390851548000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
+                <marker date="1390851548000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
+                <marker date="1390851548000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -61,11 +63,11 @@
       <file leaf-file-name="login.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="17" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="1575">
+            <state line="35" column="44" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1575">
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1390791646000" expanded="true" signature="2741:2800" placeholder="INSERT INTO ..." />
-                <marker date="1390791646000" expanded="true" signature="3778:3823" placeholder="INSERT INTO ..." />
+                <marker date="1390849575000" expanded="true" signature="2744:2803" placeholder="INSERT INTO ..." />
+                <marker date="1390849575000" expanded="true" signature="3781:3826" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -83,7 +85,7 @@
       <file leaf-file-name="reporting.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reporting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="42" selection-start="527" selection-end="527" vertical-scroll-proportion="0.386121" vertical-offset="143" max-vertical-offset="705">
+            <state line="19" column="0" selection-start="351" selection-end="351" vertical-scroll-proportion="0.50711745" vertical-offset="0" max-vertical-offset="1095">
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -129,19 +131,19 @@
       <list>
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/models.py" />
-        <option value="$PROJECT_DIR$/login.py" />
         <option value="$PROJECT_DIR$/registration.py" />
         <option value="$PROJECT_DIR$/emailScript.py" />
         <option value="$PROJECT_DIR$/emailTest.py" />
+        <option value="$PROJECT_DIR$/login.py" />
         <option value="$PROJECT_DIR$/user.py" />
         <option value="$PROJECT_DIR$/reporting.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-138" />
-    <option name="y" value="22" />
-    <option name="width" value="1069" />
+    <option name="x" value="612" />
+    <option name="y" value="43" />
+    <option name="width" value="1057" />
     <option name="height" value="698" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -447,19 +449,24 @@
       <created>1389803332786</created>
       <updated>1389803332786</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Outline for file and report structures">
+      <created>1390846046356</created>
+      <updated>1390846046356</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-138" y="22" width="1069" height="698" extended-state="0" />
+    <frame x="612" y="43" width="1057" height="698" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16557531" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16745506" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966834" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -469,7 +476,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -484,7 +490,8 @@
     </option>
     <MESSAGE value="Added readme file" />
     <MESSAGE value="Added readme file&#10;got Database insert working - Used NULL value for autoincrement column" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added readme file&#10;got Database insert working - Used NULL value for autoincrement column" />
+    <MESSAGE value="Outline for file and report structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Outline for file and report structures" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,8 +504,8 @@
         <state line="54" column="3" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="900">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390791646000" expanded="true" signature="2741:2800" placeholder="INSERT INTO ..." />
-            <marker date="1390791646000" expanded="true" signature="3778:3823" placeholder="INSERT INTO ..." />
+            <marker date="1390849575000" expanded="true" signature="2744:2803" placeholder="INSERT INTO ..." />
+            <marker date="1390849575000" expanded="true" signature="3781:3826" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -522,13 +529,13 @@
         <state line="104" column="43" selection-start="2645" selection-end="2645" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2265">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390844379000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
-            <marker date="1390844379000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
-            <marker date="1390844379000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
+            <marker date="1390851548000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
+            <marker date="1390851548000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
+            <marker date="1390851548000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -538,8 +545,8 @@
         <state line="10" column="41" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="585">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390791646000" expanded="true" signature="2741:2800" placeholder="INSERT INTO ..." />
-            <marker date="1390791646000" expanded="true" signature="3778:3823" placeholder="INSERT INTO ..." />
+            <marker date="1390849575000" expanded="true" signature="2744:2803" placeholder="INSERT INTO ..." />
+            <marker date="1390849575000" expanded="true" signature="3781:3826" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -563,13 +570,13 @@
         <state line="89" column="11" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1920">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390844379000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
-            <marker date="1390844379000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
-            <marker date="1390844379000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
+            <marker date="1390851548000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
+            <marker date="1390851548000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
+            <marker date="1390851548000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -595,30 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user.py">
+    <entry file="file://$PROJECT_DIR$/emailTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="0" selection-start="5265" selection-end="5265" vertical-scroll-proportion="0.0" vertical-offset="2093" max-vertical-offset="2760">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390844379000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
-            <marker date="1390844379000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
-            <marker date="1390844379000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
-            <marker date="1390844379000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="1575">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1390791646000" expanded="true" signature="2741:2800" placeholder="INSERT INTO ..." />
-            <marker date="1390791646000" expanded="true" signature="3778:3823" placeholder="INSERT INTO ..." />
-          </folding>
+        <state line="22" column="29" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -629,16 +616,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailTest.py">
+    <entry file="file://$PROJECT_DIR$/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
+        <state line="178" column="0" selection-start="5514" selection-end="5514" vertical-scroll-proportion="0.0" vertical-offset="2183" max-vertical-offset="2760">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1390851548000" expanded="true" signature="841:1626" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:1609" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="841:874" placeholder="CREATE TABLE..People..." />
+            <marker date="1390851548000" expanded="true" signature="1787:2396" placeholder="CREATE TABLE..building..." />
+            <marker date="1390851548000" expanded="true" signature="2582:3009" placeholder="CREATE TABLE..units..." />
+            <marker date="1390851548000" expanded="true" signature="5363:5449" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="44" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1575">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1390849575000" expanded="true" signature="2744:2803" placeholder="INSERT INTO ..." />
+            <marker date="1390849575000" expanded="true" signature="3781:3826" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reporting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="42" selection-start="527" selection-end="527" vertical-scroll-proportion="0.386121" vertical-offset="143" max-vertical-offset="705">
+        <state line="19" column="0" selection-start="351" selection-end="351" vertical-scroll-proportion="0.50711745" vertical-offset="0" max-vertical-offset="1095">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

@@ -38,7 +38,7 @@ def userSignIn():
                     print "new tenant"
                     registerTenant(row[0])
                 if choice=="6":
-                    print "Transfering to Reporting module"
+                    print "Transferring to Reporting module"
                     reportModule(row[0])
 
             else:
@@ -50,7 +50,7 @@ def registerBuilding(owner):
     numOfUnits = int(raw_input("Number of units: "))
     buildingName =raw_input("Legal Name of Corporation holding building - to be used on forms: ")
     streetNumber =raw_input("Street Number for the Building: ")
-    streetName  =raw_input("Street Name - do not include Type (St/Ave/Dr) or direction")
+    streetName  =raw_input("Street Name - do not include Type (St/Ave/Dr) or direction: ")
     streetType =raw_input("Street Type (e.g. Street, Avenue, Road): ")
     direction =raw_input("Direction of Street: ")
     municipality =raw_input("City/Municpality: ")

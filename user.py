@@ -170,8 +170,8 @@ def userSignUp():
 
 #checkAndCreateDB()
 
-userSignUp()
-#userSignIn()
+#userSignUp()
+userSignIn()
 
 
 
