@@ -22,8 +22,9 @@ def reportModule(owner):
 
     if choice =="1":
         #pull out directory related to the user
-        #every month, create new folder - 
-        #make a unique file name
+        #every month, create new folder - MonthYear
+        #check if a folder exists for that month
+        #make a unique file name - ReportName+Month+Year
         myOutputFile = open("buildings.txt", "w")
         with sqlite3.connect(db) as connection:
             c = connection.cursor()
