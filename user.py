@@ -4,6 +4,7 @@ import random
 import hashlib
 from login import userSignIn
 import os
+import sys
 
 
 path = "/Users/workhorse/thinkful/apartments"
@@ -50,7 +51,8 @@ def createUserRegTable():
             zipCode TEXT NOT NULL,
             province TEXT NOT NULL,
             country TEXT NOT NULL,
-            regDate DATE NOT NULL)
+            regDate DATE NOT NULL,
+            userDirectory TEXT NOT NULL )
             """)
         print "user table made"
 
@@ -150,22 +152,26 @@ def userSignUp():
     province = raw_input("Enter your state or province: ")
     country = raw_input("Enter your country: ")
     regDate = datetime.date.today()
+    userDirectory = str(regDate)+str(userName)+str(salt)
     print regDate
+    print userDirectory
+    fullPath = os.path.join(path, userDirectory)
+    print fullPath
+    os.makedirs( fullPath, 0755 )
 
-
-    params = ( userName,password, salt, confirmPassword,firstName, lastName, companyName, email, phoneNumber, faxNumber, addressLine1, addressLine2, addressLine3, suiteNumber, zipCode, province, country, regDate)
+    params = ( userName,password, salt, confirmPassword,firstName, lastName, companyName, email, phoneNumber, faxNumber, addressLine1, addressLine2, addressLine3, suiteNumber, zipCode, province, country, regDate, userDirectory)
 
 
 
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
-        c.execute("INSERT INTO People VALUES (NULL, ?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
+        c.execute("INSERT INTO People VALUES (NULL, ?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)", params)
 
 
 #checkAndCreateDB()
 
-#userSignUp()
-userSignIn()
+userSignUp()
+#userSignIn()
 
 
 

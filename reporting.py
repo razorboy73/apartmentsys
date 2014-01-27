@@ -4,6 +4,11 @@ from emailScript import emailScript
 
 #http://docs.python.org/2/library/email-examples.html
 
+#need to come up with unique file names
+#need to create file structure for each users
+
+
+
 
 path = "/Users/workhorse/thinkful/apartments"
 db = "apartment.db"
@@ -16,6 +21,9 @@ def reportModule(owner):
     """)
 
     if choice =="1":
+        #pull out directory related to the user
+        #every month, create new folder - 
+        #make a unique file name
         myOutputFile = open("buildings.txt", "w")
         with sqlite3.connect(db) as connection:
             c = connection.cursor()
