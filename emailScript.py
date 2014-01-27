@@ -1,4 +1,4 @@
-
+#not being used
 def emailScript(text):
     import smtplib
 

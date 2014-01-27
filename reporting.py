@@ -1,6 +1,7 @@
 import sqlite3
 import os
-from emailScript import emailScript
+#from emailScript import emailScript
+from emailexper import mailReports
 import datetime
 import sys
 
@@ -46,6 +47,7 @@ def reportModule(owner):
         fileBase = str(newDir)+"/"+str(currentMonthYear)+"buildings.txt"
         print "Filename: ", fileBase
 
+
         #pull out directory related to the user - create path - done
         #every month, create new folder - MonthYear
         #check if a folder exists for that month
@@ -60,7 +62,7 @@ def reportModule(owner):
                 linesToWrite ="{},{},{},{},{},{},{},{},{},{},{},{},{}" .format(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11],row[12])
                 myOutputFile.writelines(linesToWrite)
             myOutputFile.close()
-            emailScript(linesToWrite)
+            mailReports(newDir)
             print "email report sent"
 
 
