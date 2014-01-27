@@ -4,7 +4,6 @@ import random
 import hashlib
 from login import userSignIn
 import os
-import hmac
 
 
 path = "/Users/workhorse/thinkful/apartments"
