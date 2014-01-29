@@ -170,9 +170,16 @@ def userSignUp():
 
 #checkAndCreateDB()
 
-#userSignUp()
-userSignIn()
 
+def startUp():
+    choice = raw_input(""" Are you a:
+    1. New User
+    2. Returning User
+    """)
+    if choice == "1":
+        userSignUp()
+    if choice == "2":
+        userSignIn()
 
-
+startUp()
 

@@ -2,6 +2,7 @@ import hashlib
 import sqlite3
 from reporting import reportModule
 
+
 path = "/Users/workhorse/thinkful/"
 db = "apartment.db"
 SECRET = "imsosecret"
@@ -18,29 +19,11 @@ def userSignIn():
             print row[1]
             print row[2]
             print row[3]
+            #p_ID, firstName, lastName, password, salt = row
             x = hashlib.sha256(password+row[4]).hexdigest()
             print x
-            if x  == row[3]:
-                choice = raw_input( """Authenticated
-                What do you want to do now
-                Enter the number of your choice:
-                1. Register a new building
-                2. add a tenant
-                3. Modify a tenant
-                4. collect rent
-                5. Modify global settings
-                6. Manually generate reports
-                """)
-                if choice=="1":
-                    print "new building"
-                    registerBuilding(row[0])
-                if choice=="2":
-                    print "new tenant"
-                    registerTenant(row[0])
-                if choice=="6":
-                    print "Transferring to Reporting module"
-                    reportModule(row[0])
-
+            if x  == password:
+                userActions(row[3])
             else:
                 print "reject"
 
@@ -69,6 +52,7 @@ def registerBuilding(owner):
         c.execute("INSERT INTO building VALUES (NULL, ?,?,?,?,?,?,?,?,?,?,?,?)", params)
 
     #add a tenant to this building
+    userActions(owner)
 
 
 
@@ -98,3 +82,65 @@ def registerTenant(owner):
     with sqlite3.connect(db) as connection:
         c = connection.cursor()
         c.execute("INSERT INTO units VALUES (NULL, ?, ?,?,?,?,?)", params)
+
+    userActions(owner)
+
+def modifyingTenant(owner):
+    print "You are modifying an existing tenant. which building"
+    print "You are owner number:", owner
+    print "you manage the following buildings"
+    with sqlite3.connect(db) as connection:
+        c = connection.cursor()
+        c.execute ("SELECT b_ID, buildingName, owner, numOfUnits from building WHERE owner='{}'".format(owner))
+        for row in c.fetchall():
+            print row[0], row[1], row[2], row[3]
+
+
+    buildingName  = raw_input("Enter a building number: ")
+    owner = owner
+    unitNum = raw_input("Enter the unit number: ")
+    #check for duplications
+    rent = raw_input("Enter Monthly Rent - do not include dollar sign: ")
+    fname = raw_input("tenant first name: ")
+    lname = raw_input("tenant last name: ")
+
+    params = ( buildingName, owner, unitNum, rent, fname, lname)
+
+
+
+    with sqlite3.connect(db) as connection:
+        c = connection.cursor()
+        c.execute("INSERT INTO units VALUES (NULL, ?, ?,?,?,?,?)", params)
+
+    userActions(owner)
+
+
+def userActions(owner):
+    choice = raw_input( """Authenticated
+    What do you want to do now?
+    Enter the number of your choice:
+    1. Register a new building
+    2. add a tenant
+    3. Modify a tenant
+    4. collect rent
+    5. Modify global settings
+    6. Manually generate reports
+    """)
+    if choice=="1":
+        print "new building"
+        registerBuilding(owner)
+    if choice=="2":
+        print "new tenant"
+        registerTenant(owner)
+    if choice=="3":
+        print" Modify a Tenant"
+        pass
+    if choice=="4":
+        print "Collect Rent"
+        pass
+    if choice=="5":
+        print "Modify Global Setting"
+        pass
+    if choice=="6":
+        print "Transferring to Reporting module"
+        reportModule(owner)

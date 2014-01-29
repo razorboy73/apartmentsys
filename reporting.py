@@ -62,9 +62,38 @@ def reportModule(owner):
                 linesToWrite ="{},{},{},{},{},{},{},{},{},{},{},{},{}" .format(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11],row[12])
                 myOutputFile.writelines(linesToWrite)
             myOutputFile.close()
-            mailReports(newDir)
-            print "email report sent"
+            mailReports(fileBase)
+            print "email report of the building in your portfolio sent"
 
 
     if choice =="2":
+        currentMonthYear = i.strftime('%B%Y')
+        print currentMonthYear
+        newDir = os.path.join(fullPath, currentMonthYear)
+        print "New Directory to be Created based on path and date: ", newDir
+        if os.path.isdir(newDir):
+            print newDir, "Exists"
+        else:
+            print "making new Dir"
+            os.mkdir( newDir, 0755 )
+
+        fileBase = str(newDir)+"/"+str(currentMonthYear)+"tenants.txt"
+        print "Filename: ", fileBase
+
+
+        #pull out directory related to the user - create path - done
+        #every month, create new folder - MonthYear
+        #check if a folder exists for that month
+        #make a unique file name - ReportName+Month+Year
+        myOutputFile = open(fileBase, "w")
+        with sqlite3.connect(db) as connection:
+            c = connection.cursor()
+            c.execute ("SELECT u_ID, buildingName, owner, unitNum, rent, fname, lname from units WHERE owner='{}'".format(owner))
+            for row in c.fetchall():
+                print row[0],row[1],row[2],row[3],row[4],row[5],row[6]
+                linesToWrite ="{},{},{},{},{},{},{}" .format(row[0],row[1],row[2],row[3],row[4],row[5],row[6])
+                myOutputFile.writelines(linesToWrite)
+            myOutputFile.close()
+            mailReports(fileBase)
+            print "email report of your current tenants sent"
         pass
